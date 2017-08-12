@@ -27,6 +27,15 @@ Now run the downloaded docker binary:
 ./dockerdoomd
 ```
 
+Are you trying to run this on macOS? Use the following command line arguments to
+setup dockerdoomd with a tcp server instead of a unix socket. Also make sure
+you're using the docker image `briancain/dockerdoomtcp` so they can talk to each
+other.
+
+```bash
+./dockerdoomd -imageName briancain/dockerdoomtcp -tcp
+```
+
 You should receive output similar to:
 
 ```
@@ -130,6 +139,7 @@ Containers and streaming technology (naively VNC) gives one possible solution to
 ## Links
 
 * [Github repo for the DOOM used here](https://github.com/GideonRed/dockerdoom)
+* [Github repo for the TCP DOOM used here](https://github.com/briancain/dockerdoom)
 * [Github repo for `dockerdoomd`](https://github.com/GideonRed/dockerdoomd)
 
 ## Thanks
